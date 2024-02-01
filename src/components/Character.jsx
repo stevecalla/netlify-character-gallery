@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const Character = ({ name, imgUrl, birth, death, race, realm, spouse }) => {
     return (
         <div>
