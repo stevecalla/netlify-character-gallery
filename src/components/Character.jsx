@@ -8,7 +8,7 @@ const Character = ({ name, imgUrl, birth, death, race, realm, spouse }) => {
 
             <ul>
                 <li>
-                    Date of Birth: { irth }
+                    Date of Birth: { birth }
                 </li>
                 <li>
                     Date of Death: { death }
