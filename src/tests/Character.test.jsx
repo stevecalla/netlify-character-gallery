@@ -29,105 +29,105 @@ describe('Character Component Content Structure', () => {
         expect(characterHeading).toBeDefined();
     });
 
-    // it("Renders a img for the Character", () => {
-    //     render(<Character />);
-    //     const charImg = screen.getByRole('img');
+    it("Renders a img for the Character", () => {
+        render(<Character />);
+        const charImg = screen.getByRole('img');
 
-    //     expect(charImg).toBeDefined();
-    // });
+        expect(charImg).toBeDefined();
+    });
 
-    // it("Renders a list for the Character", () => {
-    //     render(<Character />);
-    //     const charList = screen.getByRole("list");
+    it("Renders a list for the Character", () => {
+        render(<Character />);
+        const charList = screen.getByRole("list");
 
-    //     expect(charList).toBeDefined();
-    // });
+        expect(charList).toBeDefined();
+    });
 
-    // it("Renders all list items for the Character", () => {
-    //     render(<Character />);
-    //     const items = screen.getAllByRole("listitem");
+    it("Renders all list items for the Character", () => {
+        render(<Character />);
+        const items = screen.getAllByRole("listitem");
 
-    //     expect(items.length).toBe(5);
-    // });
+        expect(items.length).toBe(5);
+    });
 
-    // it("Renders a list item for the Character's DOB", () => {
-    //     render(<Character />);
-    //     const charDob = screen.getByText(/Date of Birth:/i);
+    it("Renders a list item for the Character's DOB", () => {
+        render(<Character />);
+        const charDob = screen.getByText(/Date of Birth:/i);
 
-    //     expect(charDob).toBeDefined();
-    // });
+        expect(charDob).toBeDefined();
+    });
 
-    // it("Renders a list item for the Character's DOD", () => {
-    //     render(<Character />);
-    //     const charDeath = screen.getByText(/Date of Death:/i);
+    it("Renders a list item for the Character's DOD", () => {
+        render(<Character />);
+        const charDeath = screen.getByText(/Date of Death:/i);
 
-    //     expect(charDeath).toBeDefined();
-    // });
+        expect(charDeath).toBeDefined();
+    });
 
-    // it("Renders a list item for the Character's Race", () => {
-    //     render(<Character />);
-    //     const charRace = screen.getByText(/Race:/i);
+    it("Renders a list item for the Character's Race", () => {
+        render(<Character />);
+        const charRace = screen.getByText(/Race:/i);
 
-    //     expect(charRace).toBeDefined();
-    // });
+        expect(charRace).toBeDefined();
+    });
 
-    // it("Renders a list item for the Character's Realm", () => {
-    //     render(<Character />);
-    //     const charRealm = screen.getByText(/Realm:/i);
+    it("Renders a list item for the Character's Realm", () => {
+        render(<Character />);
+        const charRealm = screen.getByText(/Realm:/i);
 
-    //     expect(charRealm).toBeDefined();
-    // });
+        expect(charRealm).toBeDefined();
+    });
 
-    // it("Renders a list item for the Character's Spouse", () => {
-    //     render(<Character />);
-    //     const charSpouse = screen.getByText(/Spouse:/i);
+    it("Renders a list item for the Character's Spouse", () => {
+        render(<Character />);
+        const charSpouse = screen.getByText(/Spouse:/i);
 
-    //     expect(charSpouse).toBeDefined();
-    // });
+        expect(charSpouse).toBeDefined();
+    });
 });
 
-// describe('Character Component Renders Props', () => {
+describe('Character Component Renders Props', () => {
 
-    // it("Renders the Character's name", () => {
-    //     render(<Character { ...samwiseGamgee } />);
-    //     const characterHeading = screen.getByRole('heading', { level: 2, name: samwiseGamgee.name });
+    it("Renders the Character's name", () => {
+        render(<Character { ...samwiseGamgee } />);
+        const characterHeading = screen.getByRole('heading', { level: 2, name: samwiseGamgee.name });
 
-    //     expect(characterHeading).toBeDefined();
-    // });
+        expect(characterHeading).toBeDefined();
+    });
 
-    // it("Renders the Character's DOB", () => {
-    //     render(<Character { ...samwiseGamgee } />);
-    //     const dateOfBirth = screen.getByText(`Date of Birth: ${samwiseGamgee.birth}`);
+    it("Renders the Character's DOB", () => {
+        render(<Character { ...samwiseGamgee } />);
+        const dateOfBirth = screen.getByText(`Date of Birth: ${samwiseGamgee.birth}`);
 
-    //     expect(dateOfBirth).toBeDefined();
-    // });
+        expect(dateOfBirth).toBeDefined();
+    });
 
-    // it("Renders the Character's DOD", () => {
-    //     render(<Character { ...samwiseGamgee } />);
-    //     const charDeath = screen.getByText(`Date of Death: ${samwiseGamgee.death}`);
+    it("Renders the Character's DOD", () => {
+        render(<Character { ...samwiseGamgee } />);
+        const charDeath = screen.getByText(`Date of Death: ${samwiseGamgee.death}`);
 
-    //     expect(charDeath).toBeDefined();
-    // });
+        expect(charDeath).toBeDefined();
+    });
 
-    // it("Renders the Character's Race", () => {
-    //     render(<Character { ...samwiseGamgee } />);
-    //     const charRace = screen.getByText(`Race: ${samwiseGamgee.race}`);
+    it("Renders the Character's Race", () => {
+        render(<Character { ...samwiseGamgee } />);
+        const charRace = screen.getByText(`Race: ${samwiseGamgee.race}`);
 
-    //     expect(charRace).toBeDefined();
-    // });
+        expect(charRace).toBeDefined();
+    });
 
-    // it("Renders the Character's Realm", () => {
-    //     render(<Character { ...samwiseGamgee } />);
-    //     const charRealm = screen.getByText(`Realm:${samwiseGamgee.realm}`);
+    it("Renders the Character's Realm", () => {
+        render(<Character { ...samwiseGamgee } />);
+        const charRealm = screen.getByText(`Realm:${samwiseGamgee.realm}`);
 
-    //     expect(charRealm).toBeDefined();
-    // });
+        expect(charRealm).toBeDefined();
+    });
 
-    // it("Renders the Character's Spouse", () => {
-    //     render(<Character { ...samwiseGamgee } />);
-    //     const charSpouse = screen.getByText(`Spouse: ${samwiseGamgee.spouse}`);
+    it("Renders the Character's Spouse", () => {
+        render(<Character { ...samwiseGamgee } />);
+        const charSpouse = screen.getByText(`Spouse: ${samwiseGamgee.spouse}`);
 
-    //     expect(charSpouse).toBeDefined();
-    // });
+        expect(charSpouse).toBeDefined();
+    });
 
-// });
+});
