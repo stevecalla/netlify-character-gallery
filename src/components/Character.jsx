@@ -27,3 +27,7 @@ const Character = ({ name, imgUrl, birth, death, race, realm, spouse }) => {
 };
 
 export default Character;
+
+{/* <div>
+  <h2>{props.name}</h2>
+</div> */}
